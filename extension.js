@@ -37,9 +37,11 @@ function _showNotify(text) {
 }
 
 function _startStream(streamName) {
-//	Uncomment for livestreamer
+//	Uncomment these lines for livestreamer:
 //	let streamURL = "www.twitch.tv/"+streamName;
 //	imports.misc.util.spawn([COMMAND, streamURL,"best"]);
+//
+//	Comment out this line for livestreamer:
 	imports.misc.util.spawn([COMMAND, streamName]);
 }
 
